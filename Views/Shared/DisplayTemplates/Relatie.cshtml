@@ -1,0 +1,20 @@
+@model TIMO.Entities.Relatie
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+
+
+<tr data-toggle="modal" data-target="#myModal2">
+	<td> 
+		@Model.RelatieId
+	</td>
+	<td> @Model.VolledigeNaam</td>
+</tr>
+
+
+<tr>
+	<td> 
+		<a asp-controller="Relatie" asp-action="Read" asp-route-RelatieId="@Model.RelatieId" data-target="#modal-container" data-toggle="modal">
+			@Model.RelatieId
+		</a>
+	</td>
+	<td> @Model.VolledigeNaam</td>
+</tr>

@@ -1,0 +1,93 @@
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+
+<html>
+<head>
+
+<script src="/js/jquery-3.1.1.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/validator.js"></script>
+<script src="/js/timo.js"></script>
+<link href="/css/bootstrap.css" rel="stylesheet">
+<link href="/css/Main.css" rel="stylesheet">
+
+
+<title>
+	No Internal Server Error
+</title>
+</head>
+
+<body>
+<div class="container-fluid">
+
+<!-- Topbalk -->
+<div class="row top navbar-fixed-top">
+
+	<div class="imgwrapper col-xs-offset-1 col-xs-6">
+		<img class="img-responsive" <img src="~/img/Logo.png" alt="logo"></a>
+	</div>
+
+	<div class="imgwrapper col-xs-4">
+		<img class="img-responsive pull-right" src="~/img/Bord.png" alt="bord"></a>
+	</div>
+
+	<div class="col-xs-1"></div>
+
+	<!-- Navbar later misschien fixed, navbar-fixed-top-->
+	<div class = "col-xs-12">
+		<nav class="navbar navbar-custom navbar-static-top">
+			<div class="container-fluid">
+				<ul class="nav navbar-nav">
+					<li>
+						<a asp-controller="Relatie" asp-action="Index">
+							Relaties
+						</a>
+					</li>
+
+					<li>
+						<a asp-controller="Uur" asp-action="Index">
+							Uren
+						</a>
+					</li>
+
+					<li>
+						<a asp-controller="Factuur" asp-action="Index">
+							Facturen
+						</a>
+					</li>
+
+					<li>
+						<a asp-controller="Tarief" asp-action="Index">
+							Tarieven
+						</a>
+					</li>
+				</ul>
+
+			</div>	
+		</nav>
+	</div>
+	<!-- Einde navbar -->
+
+</div> 
+<!-- Einde topbalk -->
+
+
+
+<!-- Pagina hier --> 
+<div class="mid row">
+	<div class="col-md-offset-1 col-md-10">
+		@RenderBody()
+	</div>
+</div>
+<!-- Einde van de pagina -->
+
+
+<div class="bottom row navbar-fixed-bottom">
+	<div class="col-md-11">
+		Site by <a href="mailto:Hanneke12345@gmail.com:">H.Gnep</a>
+	</div>
+	<div class="col-xs-1">
+</div>
+
+</div>
+</body>
+</html>

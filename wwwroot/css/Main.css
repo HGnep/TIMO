@@ -1,0 +1,44 @@
+/* Navbar */
+@import "Navbar.css";
+@import "Tables.css";
+@import "Layout.css";
+
+.imgwrapper img {
+	max-height: 100px;
+	min-height: 100px;
+}
+
+img-fix{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.imgbox {
+	width: 600px;
+	height: 400px;
+	position: fixed;
+	bottom: 30px;
+	right: 0;
+}
+
+.modal {
+	top: 135px;
+}
+
+.modal-xl {
+	width: 80%;
+	max-width:1200px;
+}
+
+.center {
+	text-align: center;
+}
+
+.small-text{
+	font-size: small;
+}
+
+.button {
+	text-align: right;
+}

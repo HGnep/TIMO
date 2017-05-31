@@ -1,0 +1,41 @@
+table { 
+	width: 100%; 
+	border-collapse: collapse;
+	
+	position: relative;
+}
+
+tr:nth-of-type(odd) { /*oneven rij */ 
+	background:         #CCC; 
+}
+
+th { /* table head */
+	background:         #3A3A3A;
+	color:              #EEEEEE;
+	font-weight:        bold;
+	border:             0px;
+	text-align:         center;
+}
+
+td, th { 
+	padding:            6px; 
+	border: 1px solid   #999; 
+	text-align:         left; 
+}
+
+tr:hover {
+	background:         #3A3A3A;
+	color:              #FFBC00;
+}
+
+.ticon{
+	position:           absolute;
+	top:                0;
+	right:              0;
+	height:             25px;
+	width:              25px;
+}
+
+.clickableRow {
+	cursor:             pointer;
+}

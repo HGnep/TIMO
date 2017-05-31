@@ -1,0 +1,201 @@
+@{
+	Layout = "_Layout";
+	var joe = "test";
+	Random rnd = new Random();
+	var viernulvier = "~/img/404/image" + rnd.Next(1,6) + ".png";
+}
+
+<h2> @ViewData["Title"].</h2>
+
+<h2> Deze pagina bestaat nog even niet. </h2>
+
+
+<form data-toggle="validator" role="form">
+
+		<div class="row">
+			<div class="col-xs-offset-1 col-xs-3">
+				<div class="form-group">
+					<label for="Voornaam" class="control-label small-text">Voornaam:</label>
+					<input type="text" class="form-control" id="voornaam" placeholder="Voornaam">
+				</div>
+			</div>
+
+			<div class="col-xs-2">
+				<div class="form-group">
+					<label for="Tussenvoegsel" class="control-label small-text">Tussenvoegsel:</label>
+					<input type="Tussenvoegsel" class="form-control" id="Tussenvoegsel" placeholder="van der">
+				</div>
+			</div>
+
+			<div class="col-xs-5">
+				<div class="form-group">
+					<label for="Achternaam" class="control-label small-text">Achternaam:</label>
+					<input type="Achternaam" class="form-control" id="Achternaam" placeholder="Achternaam" required>
+				</div>
+			</div>
+
+			<div class="col-xs-1"></div>
+		</div>
+
+		<div class="row"> 
+			<div class="col-xs-offset-1 col-xs-6">
+				<div class="form-group">
+					<label for="Straat" class="control-label small-text">Straat:</label>
+					<input type="Straat" class="form-control" id="Straat" placeholder="Straatnaam" required>
+				</div>
+			</div>
+
+			<div class="col-xs-2">
+				<div class="form-group">
+					<label for="Huisnummer" class="control-label small-text">Huisnr.:</label>
+					<input type="Huisnummer" class="form-control" id="Huisnummer" placeholder="42" required>
+				</div>
+			</div>
+
+			<div class="col-xs-2">
+				<div class="form-group">
+					<label for="Toevoeging" class="control-label small-text">Toevoeging.:</label>
+					<input type="Toevoeging" class="form-control" id="Toevoeging" placeholder="B.">
+				</div>
+			</div>
+			<div class="col-xs-1"></div>
+		</div>
+
+
+		<div class="row"> 
+			<div class="col-xs-offset-1 col-xs-3">
+				<div class="form-group">
+					<label for="Postcode" class="small-text">Postcode:</label>
+					<input type="Postcode" class="form-control" id="Postcode" placeholder="1033 SL" required>
+				</div>
+			</div>
+
+			<div class="col-xs-7">
+				<div class="form-group">
+					<label for="Woonplaats" class="small-text">Woonplaats:</label>
+					<input type="Woonplaats" class="form-control" id="Woonplaats" placeholder="Woonplaats" required>
+				</div>
+			</div>
+			<div class="col-xs-1"></div>
+		</div>
+
+
+		<div class="row">
+			<div class="col-xs-offset-1 col-xs-3">
+				<div class="form-group">
+					<label for="Telefoonnummer" class="small-text">Telefoonnummer:</label>
+					<input type="Telefoonnummer" class="form-control" id="Telefoonnummer" placeholder="06********">
+				</div>
+			</div>
+
+			<div class="col-xs-3">
+				<div class="form-group">
+					<label for="Email" class="small-text">E-mailadres:</label>
+					<input type="Email" class="form-control" id="Email" placeholder="<naam>[at]gmail.com">
+				</div>
+			</div>
+
+			<div class="col-xs-2">
+				<div class="form-group">
+					<label for="Geboortedatum" class="small-text">Geboortedatum:</label>
+					<input type="Geboortedatum" class="form-control" id="Geboortedatum" placeholder="dd-mm-yyyy">
+				</div>
+			</div>
+
+			<div class="col-xs-2">
+				<div class="form group">
+					<label for"Geslacht" class="small-text">Geslacht:</label>
+					<select class="form-control" id="sel1">
+						<option>Man</option>
+						<option>Vrouw</option>
+						<option>Overig</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-xs-1"></div>
+		</div>
+
+
+			<div class="row"> 
+			<div class="col-xs-offset-1 col-xs-10">
+				<div class="form-group">
+					<label for="Opmerkingen" class="small-text">Opmerkingen:</label>
+					<textarea class="form-control" rows="3" placeholder="Overige gegevens"></textarea>
+				</div>
+			</div>
+			<div class="col-xs-1"></div>
+		</div>
+
+	<div class="form-group">
+		<label for="inputName" class="control-label">Name</label>
+		<input type="text" class="form-control" id="inputName" placeholder="Cina Saffary" required>
+	</div>
+
+	<div class="form-group has-feedback">
+		<label for="inputTwitter" class="control-label">Twitter</label>
+		<div class="input-group">
+		<span class="input-group-addon">[at]</span>
+			<input type="text" pattern="^[_A-z0-9]{1,}$" maxlength="15" class="form-control" id="inputTwitter" placeholder="1000hz" required>	
+		</div>
+		<span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+		<div class="help-block with-errors">Hey look, this one has feedback icons!</div>
+	</div>
+
+	<div class="form-group">
+		<label for="inputEmail" class="control-label">Email</label>
+		<input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+		<div class="help-block with-errors"></div>
+	</div>
+
+	<div class="form-group">
+		<label for="inputPassword" class="control-label">Password</label>
+		<div class="form-inline row">
+			<div class="form-group col-sm-6">
+				<input type="password" data-minlength="6" class="form-control" id="inputPassword" placeholder="Password" required>
+				<div class="help-block">Minimum of 6 characters</div>
+			</div>
+			<div class="form-group col-sm-6">
+				<input type="password" class="form-control" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+				<div class="help-block with-errors"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="radio">
+			<label>
+				<input type="radio" name="underwear" required>
+				Boxers
+			</label>
+		</div>
+		<div class="radio">
+			<label>
+				<input type="radio" name="underwear" required>
+				Briefs
+			</label>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" id="terms" data-error="Before you wreck yourself" required>
+				Check yourself
+			</label>
+			<div class="help-block with-errors"></div>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</div>
+</form>
+
+
+
+plaatje: @viernulvier 
+
+<div class="imgbox">
+<img src="@Url.Content(viernulvier)" alt="404 image not found"></a>
+</div>
+

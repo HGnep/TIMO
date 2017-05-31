@@ -1,0 +1,33 @@
+.navbar-custom {
+	background-color:   #353535;
+	border-bottom-color:#2F2F2F;
+	border-top-color:   #454545;
+	background-image:   linear-gradient(to bottom, #454545 0%, #2F2F2F 100%);
+	filter:             progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4f4f4f', endColorstr='#ff353535', GradientType=0);
+}
+
+.navbar-custom .navbar-nav > li > a {
+	color:              #FFFFFF;
+	text-shadow:        #000000 0px 3px 3px;
+	font-size:          22px;
+	padding-top:        7px;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+	color:              #ffbc00;
+	background-color:   transparent;
+}
+
+.navbar-nav {
+	margin-left:        10%;
+}
+
+.navbar {
+	position:           fixed;
+	width:              100%;
+	min-height:         10px;
+	height:             35px;
+	}
+
+
